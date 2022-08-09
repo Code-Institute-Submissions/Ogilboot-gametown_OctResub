@@ -111,7 +111,7 @@ function moveBall() {
     checkForCollisions()
 }
 
-timerId = setInterval(moveBall, 30) 
+timerId = setInterval(moveBall, 15) 
 
 // check for collisions
 function checkForCollisions() {
@@ -126,8 +126,14 @@ function checkForCollisions() {
             blocks.splice(i, 1)
             changeDirection()
             score++
-            scoreDisplay.innterHTML = score
+            scoreDisplay.innerHTML = score
 
+            //check for win
+            if (blocks.length === 0) {
+                scoreDisplay.innerHTML = 'You Win!'
+                clearInterval(timerId)
+                document.removeEventListener('keydown', movePlayer)
+            }
 
         }
     }
