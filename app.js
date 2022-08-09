@@ -68,6 +68,7 @@ function movePlayer(e) {
                 currentPosition[0] -= 10
                 drawPlayer()
             }
+            break;
         case 'ArrowRight':
             if (currentPosition[0] < boardWidth - blockWidth) {
                 currentPosition[0] +=10
