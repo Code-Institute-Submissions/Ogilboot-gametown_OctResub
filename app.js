@@ -6,6 +6,9 @@ const boardWidth = 560
 const playerStart = [230, 10]
 let currentPosition = playerStart
 
+const ballStart = [270, 40]
+let ballCurrentPosition = ballStart
+
 //creates block individual
 class Block {
     constructor(xAxis, yAxis) {
@@ -60,6 +63,13 @@ function drawPlayer() {
     player.style.bottom = currentPosition[1] + 'px'
 }
 
+//draw the ball
+function drawBall () {
+    ball.style.left = ballCurrentPosition[0] + 'px'
+    ball.style.bottom = ballCurrentPosition[1] + 'px'
+}
+
+
 //move player
 function movePlayer(e) {
     switch(e.key) {
@@ -83,3 +93,5 @@ document.addEventListener('keydown', movePlayer)
 // add ball
 const ball = document.createElement('div')
 ball.classList.add('ball')
+drawBall()
+grid.appendChild(ball)
