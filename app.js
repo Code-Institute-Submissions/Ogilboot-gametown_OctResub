@@ -79,3 +79,7 @@ function movePlayer(e) {
 }
 
 document.addEventListener('keydown', movePlayer)
+
+// add ball
+const ball = document.createElement('div')
+ball.classList.add('ball')
