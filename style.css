@@ -21,6 +21,12 @@
     color: white;
   }
 
+/* homepage styling */
+
+.hero {
+    margin-top: 75px;
+}
+
 /* blockbattle styling */
 .grid {
     position: absolute;
