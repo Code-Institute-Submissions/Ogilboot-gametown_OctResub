@@ -1,9 +1,11 @@
+/* blockbattle styling */
 .grid {
     position: absolute;
     width: 560px;
     height: 300px;
     border: double #36454F 5px;
     margin-top: 50px;
+
 }
 
 .block {
@@ -26,4 +28,13 @@
     height: 20px;
     border-radius: 10px;
     background: #BC3823;
+}
+
+
+/* memory grid styling */
+#memoryGrid {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
