@@ -2,7 +2,7 @@
     position: absolute;
     width: 560px;
     height: 300px;
-    border: solid black 1px;
+    border: double #36454F 5px;
     margin-top: 50px;
 }
 
@@ -10,14 +10,14 @@
     position: absolute;
     width: 100px;
     height: 20px;
-    background-color: blue;
+    background-color: #36454F;
 }
 
 .player {
     position: absolute;
     width: 100px;
     height: 20px;
-    background-color: purple;
+    background-color: #008080;
 }
 
 .ball {
@@ -25,5 +25,5 @@
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background: red;
+    background: #BC3823;
 }
