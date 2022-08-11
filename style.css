@@ -68,6 +68,20 @@ a:hover {
     background: #BC3823;
 }
 
+/* game placement styling */
+
+.container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+}
+
+.item {
+  width: 10em;
+}
+
 
 /* memory grid styling */
 #memoryGrid {
