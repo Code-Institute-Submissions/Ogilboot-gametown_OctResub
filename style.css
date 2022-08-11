@@ -43,7 +43,6 @@ a:hover {
     border: double #36454F 5px;
     margin-top: 50px;
     background: white;
-
 }
 
 .block {
@@ -68,6 +67,13 @@ a:hover {
     background: #BC3823;
 }
 
+#score {
+  padding-top: 500px;
+  text-decoration: overline;
+  text-decoration-color:#BC3823;
+}
+
+
 /* game placement styling */
 
 .container {
@@ -78,9 +84,6 @@ a:hover {
   padding-top: 250px;
 }
 
-.item {
-  width: 10em;
-}
 
 
 /* memory grid styling */
