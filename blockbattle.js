@@ -133,6 +133,7 @@ function checkForCollisions() {
                 scoreDisplay.innerHTML = 'You Win!'
                 clearInterval(timerId)
                 document.removeEventListener('keydown', movePlayer)
+                setTimeout(reloadGame, 3000)
             }
 
         }
@@ -162,6 +163,7 @@ function checkForCollisions() {
         clearInterval(timerId)
         scoreDisplay.innerHTML = 'You Lose'
         document.removeEventListener('keydown', movePlayer)
+        setTimeout(reloadGame, 3000)
     }
 
 }
@@ -184,4 +186,9 @@ function changeDirection() {
         xDirection = 2
         return
     }
+}
+
+// reloads page
+function reloadGame() {
+    document.location.reload()
 }
