@@ -26,18 +26,6 @@
 
 /* homepage styling */
 
-.hero {
-    margin-top: 75px;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: hotpink;
-    text-decoration: none;
-  }
 
 /* blockbattle styling */
 .grid {
