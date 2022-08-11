@@ -26,6 +26,14 @@
 
 /* homepage styling */
 
+a {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: #36454F;
+  text-decoration: none;
+}
 
 /* blockbattle styling */
 .grid {
