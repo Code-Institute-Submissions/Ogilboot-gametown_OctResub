@@ -87,9 +87,42 @@ a:hover {
 
 
 /* memory grid styling */
+
 #memoryGrid {
     width: 400px;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
+}
+
+/* space invaders styling */
+
+.space-grid {
+  width: 300px;
+  height: 300px;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.invader {
+  background-color: purple;
+  border-radius: 10px;
+}
+
+.shooter {
+  background-color: green;
+}
+
+.laser {
+  background-color: orange;
+}
+
+.boom {
+  background-color: red;
 }
