@@ -67,13 +67,6 @@ a:hover {
     background: #BC3823;
 }
 
-#score {
-  padding-top: 500px;
-  text-decoration: overline;
-  text-decoration-color:#BC3823;
-}
-
-
 /* game placement styling */
 
 .container {
@@ -84,8 +77,6 @@ a:hover {
   padding-top: 250px;
 }
 
-
-
 /* memory grid styling */
 
 #memoryGrid {
@@ -95,37 +86,18 @@ a:hover {
     flex-wrap: wrap;
 }
 
-/* space invaders styling */
+/* spacesnake styling */
 
-.space-grid {
-  width: 300px;
-  height: 300px;
-  border: solid black 1px;
-  display: flex;
-  flex-wrap: wrap;
+#snakeboard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#score {
+  text-align: center;
+  font-size: 140px;
+  padding-top: 500px;
 }
 
-.space-grid div {
-  width: 20px;
-  height: 20px;
-}
-
-.invader {
-  background-color: purple;
-  border-radius: 10px;
-}
-
-.shooter {
-  background-color: green;
-}
-
-.laser {
-  background-color: orange;
-}
-
-.boom {
-  background-color: red;
-}
-
-/* rock paper scissors */
 
