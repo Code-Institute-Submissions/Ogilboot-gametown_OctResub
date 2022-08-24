@@ -173,3 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
     newVal.innerHTML = '';
     pTag.appendChild(newVal);
   });
+
+  // reloads page
+  function reloadGame() {
+  document.location.reload()
+}
