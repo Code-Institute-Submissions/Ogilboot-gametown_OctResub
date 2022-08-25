@@ -79,33 +79,7 @@ a:hover {
 
 /* pong */
 
-#paddle1 {
-  position:absolute;
-  left:0px;
-  top:460px;
-  width:10px;
-  height:150px;
-  background-color:black;
-}
 
-#paddle2 {
-  position:absolute;
-  right:0px;
-  top:460px;
-  width:10px;
-  height:150px;
-  background-color:black;
-}
-
-#ball {
-  position:absolute;
-  left:820px;
-  top:510px;
-  width:25px;
-  height:25px;
-  background-color:red;
-  border-radius:50%;
-}
 
 /* spacesnake styling */
 
@@ -117,7 +91,7 @@ a:hover {
 }
 #score {
   text-align: center;
-  font-size: 140px;
+  font-size: 70px;
   padding-top: 600px;
 }
 
