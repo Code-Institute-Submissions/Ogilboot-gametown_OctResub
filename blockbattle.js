@@ -130,7 +130,7 @@ function checkForCollisions() {
 
             //check for win
             if (blocks.length === 0) {
-                scoreDisplay.innerHTML = 'You Win!'
+                scoreDisplay.innerHTML = 'Winner!'
                 clearInterval(timerId)
                 document.removeEventListener('keydown', movePlayer)
                 setTimeout(reloadGame, 3000)
@@ -161,7 +161,7 @@ function checkForCollisions() {
     // check for game over
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId)
-        scoreDisplay.innerHTML = 'Lost!'
+        scoreDisplay.innerHTML = 'Loser!'
         document.removeEventListener('keydown', movePlayer)
     }
 
@@ -187,7 +187,7 @@ function changeDirection() {
     }
 }
 
- // Reloads game
+ // Reloads game on button click
  document.getElementById("block-start").addEventListener("click", function() {
     document.location.reload()
  });
