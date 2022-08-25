@@ -77,6 +77,10 @@ a:hover {
   padding-top: 250px;
 }
 
+#textbox {
+  padding-top: 100px;
+}
+
 /* pong */
 
 
@@ -92,7 +96,15 @@ a:hover {
 #score {
   text-align: center;
   font-size: 70px;
-  /* padding-top: 600px; */
+  text-decoration: underline #800020;
+}
+
+/* card styling */
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 
 
