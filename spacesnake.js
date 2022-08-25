@@ -26,6 +26,12 @@ const board_border = 'black';
     const snakeboard = document.getElementById("snakeboard");
     // Return a two dimensional drawing context
     const snakeboard_ctx = snakeboard.getContext("2d");
+
+    // Reloads game
+    document.getElementById("snake-start").addEventListener("click", function() {
+      document.location.reload()
+    });
+
     // Start game
     main();
 

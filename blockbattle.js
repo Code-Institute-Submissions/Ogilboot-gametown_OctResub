@@ -163,7 +163,6 @@ function checkForCollisions() {
         clearInterval(timerId)
         scoreDisplay.innerHTML = 'Lost!'
         document.removeEventListener('keydown', movePlayer)
-        setTimeout(reloadGame, 3000)
     }
 
 }
@@ -188,7 +187,7 @@ function changeDirection() {
     }
 }
 
-// reloads page
-function reloadGame() {
+ // Reloads game
+ document.getElementById("block-start").addEventListener("click", function() {
     document.location.reload()
-}
+ });
