@@ -161,7 +161,7 @@ function checkForCollisions() {
     // check for game over
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId)
-        scoreDisplay.innerHTML = 'You Lose'
+        scoreDisplay.innerHTML = 'Lost!'
         document.removeEventListener('keydown', movePlayer)
         setTimeout(reloadGame, 3000)
     }
