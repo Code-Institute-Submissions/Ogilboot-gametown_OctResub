@@ -51,8 +51,15 @@
       <div class="container">
           <div class="main item"><canvas id="snakeboard" width="300" height="300"></canvas></div>
       </div>
-      <!-- score section -->
-      <div id="score" class="container">0</div>
+      <!--controls section-->
+      <div class="control-container">
+        <button type="button" class="btn btn-lg btn-danger" id="up-snake-button">Up</button>
+        <button type="button" class="btn btn-lg  btn-warning" id="down-snake-button">Down</button>
+        <button type="button" class="btn btn-lg btn-success" id="left-snake-button">Left</button>
+        <button type="button" class="btn btn-lg  btn-primary" id="right-snake-button">Right</button>
+      </div>
+      <!-- score section
+      <div id="score" class="container">0</div> -->
     </section>
 
     <!-- card styled text section -->
@@ -62,6 +69,7 @@
         <!-- play button-->
         <button type="button" class="btn btn-success" id="snake-start">Reload Game</button>
         <div class="card-header bg-warning"><h5>SpaceSnake</h5></div>
+        <div id="score" class="block-score-container">0</div>
         <div class="card-body">
           <p class="card-text">SpaceSnake is a prototype attempt to recreate the classic Gremlin Industries game 'Blockade', originally released in 1976. </p>
           <hr>
