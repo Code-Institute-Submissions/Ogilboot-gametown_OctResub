@@ -83,7 +83,7 @@ a:hover {
 }
 
 #quiz-textbox {
-  
+  padding-top: 100px;
 }
 
 /* quiz */
@@ -97,7 +97,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
   margin: 0;
 } 
@@ -114,8 +114,8 @@ a:hover {
   padding: 3rem;
 } 
 
-h2{
-  padding: 1rem;
+h3 {
+  padding: .5rem;
   text-align: center;
   margin: 0;
 } 
