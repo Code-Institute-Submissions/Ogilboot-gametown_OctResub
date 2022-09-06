@@ -40,11 +40,11 @@ const quizData = [
     correct: "b",
 },
 {
-    question: "What was the original intent of the Sims?",
-    a: "Arcade Game",
-    b: "Psychological Experiment",
-    c: "Architecture Simulator",
-    d: "Console Game",
+    question: "What year was Sonic released?",
+    a: "1988",
+    b: "1999",
+    c: "1991",
+    d: "1995",
     correct: "c",
 },
 {
@@ -57,7 +57,7 @@ const quizData = [
 },
 {
     question: "What was Super Mario orginally known as?",
-    a: "Italian Plumber Simulator",
+    a: "Plumber Boy",
     b: "Magic Boots",
     c: "Jumpman",
     d: "Moustachio Jim",
