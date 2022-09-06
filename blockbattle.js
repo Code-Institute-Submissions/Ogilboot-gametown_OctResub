@@ -191,3 +191,18 @@ function changeDirection() {
  document.getElementById("block-start").addEventListener("click", function() {
     document.location.reload()
  });
+
+  // moves left on mobile
+  document.getElementById("left-button").addEventListener("click", function() {
+    if (currentPosition[0] > 0) {
+        currentPosition[0] -= 10
+        drawPlayer() }
+    })
+
+  // moves right on mobile
+  document.getElementById("right-button").addEventListener("click", function() {
+    if (currentPosition[0] < boardWidth - blockWidth) {
+        currentPosition[0] +=10
+        drawPlayer()
+    }
+    })
