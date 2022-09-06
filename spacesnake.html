@@ -32,7 +32,7 @@
                     <button class="btn-md btn-danger" type="button"><a class="nav-link" href="blockbattle.html" aria-label="blockbattle">BlockBattle</a></button>
                 </li>
                 <li class="nav-item">
-                  <button class="btn-md btn-success active" type="button"><a class="nav-link" href="memory-madness.html" aria-label="memory-madness">MemoryMadness</a></button>
+                  <button class="btn-md btn-success" type="button"><a class="nav-link" href="memory-madness.html" aria-label="memory-madness">MemoryMadness</a></button>
                 </li>
                 <li class="nav-item">
                   <button class="btn-md btn-warning active" type="button"><a class="nav-link" href="spacesnake.html" aria-label="spacesnake">SpaceSnake</a></button>
@@ -65,8 +65,16 @@
         <div class="card-body">
           <p class="card-text">SpaceSnake is a prototype attempt to recreate the classic Gremlin Industries game 'Blockade', originally released in 1976. </p>
           <hr>
-          <h5>Instructions:</h5>
-          <p>Use the Arrow keys to move your snake around the game-area and eat the Chunks of food. You will score 1 point for each Chunk eaten! Make sure not to hit the walls or yourself or you will lose the game! Use the 'Reload Game' button to reload.</p>
+
+          <!-- instructions list-->
+          <h5 class="card-header bg-primary">Instructions:</h5>
+          <ul class="list-group">
+            <li class="list-group-item"><b>1:</b> Use the arrow keys to move the Snake and intercept the 'Food' blocks.</li>
+            <li class="list-group-item"><b>2:</b> Don't let the Snake hit the sides or you will lose.</li>
+            <li class="list-group-item"><b>3:</b> You will score 10 for each block eaten.</li>
+            <li class="list-group-item"><b>4:</b> Use the <button type="button" class="btn btn-success" id="block-start">Reload Game</button> button to reload.</li>
+          </ul>
+
         </div>
       </div>
     </section>

@@ -85,12 +85,20 @@
     <section>
       <div class="col-md-6 card">
 
-        <div class="card-header bg-danger"><h5>Memory Madness</h5></div>
+        <div class="card-header bg-primary"><h5>Memory Madness</h5></div>
         <div class="card-body">
           <p class="card-text">MemoryMadness is a prototype quiz revolving around retro gaming trivia. </p>
           <hr>
-          <h5>Instructions:</h5>
-          <p>Select the correct answer from the multiple-choice options provided. When happy hit the 'Submit' button to submit your answer and move onto the next question. Your final score will be provided at the end of the quiz. Good luck!</p>
+
+            <!-- instructions list-->
+            <h5 class="card-header bg-success">Instructions:</h5>
+            <ul class="list-group">
+              <li class="list-group-item"><b>1:</b> Use the Left & Right arrow keys to move the paddle and intercept the bouncing ball into the blocks.</li>
+              <li class="list-group-item"><b>2:</b> Don't let the ball hit the bottom line or you will lose.</li>
+              <li class="list-group-item"><b>3:</b> You will score 1 for each block destroyed.</li>
+              <li class="list-group-item"><b>4:</b> Use the <button type="button" class="btn btn-secondary" id="block-start">Reload Game</button> button to reload.</li>
+            </ul>
+          
         </div>
       </div>
     </section>
