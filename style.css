@@ -78,6 +78,21 @@ a:hover {
   padding-top: 250px;
 }
 
+.block-score-container {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+}
+
 #textbox {
   padding-top: 100px;
 }
