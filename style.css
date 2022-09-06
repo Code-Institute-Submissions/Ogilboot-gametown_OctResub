@@ -36,6 +36,7 @@ a:hover {
 }
 
 /* blockbattle styling */
+
 .grid {
     position: absolute;
     width: 560px;
@@ -81,6 +82,10 @@ a:hover {
   padding-top: 100px;
 }
 
+#quiz-textbox {
+  
+}
+
 /* quiz */
 
 
@@ -106,7 +111,7 @@ a:hover {
 }
 
 .quiz-header{
-  padding: 4rem;
+  padding: 3rem;
 } 
 
 h2{
@@ -167,9 +172,9 @@ button:focus{
 /* card styling */
 
 .card {
-  margin: 0 auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: 10px; /* Added */
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px; 
 }
 
 
