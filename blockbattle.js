@@ -111,7 +111,7 @@ function moveBall() {
     checkForCollisions()
 }
 
-timerId = setInterval(moveBall, 15) 
+timerId = setInterval(moveBall, 20) 
 
 // check for collisions
 function checkForCollisions() {
@@ -195,14 +195,14 @@ function changeDirection() {
   // moves left on mobile
   document.getElementById("left-button").addEventListener("click", function() {
     if (currentPosition[0] > 0) {
-        currentPosition[0] -= 10
+        currentPosition[0] -= 25
         drawPlayer() }
     })
 
   // moves right on mobile
   document.getElementById("right-button").addEventListener("click", function() {
     if (currentPosition[0] < boardWidth - blockWidth) {
-        currentPosition[0] +=10
+        currentPosition[0] +=25
         drawPlayer()
     }
     })

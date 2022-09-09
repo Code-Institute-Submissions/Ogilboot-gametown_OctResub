@@ -121,12 +121,13 @@ const board_border = 'black';
       });
     }
 
+    // changes direction keyboard
     function change_direction(event) {
       const LEFT_KEY = 37;
       const RIGHT_KEY = 39;
       const UP_KEY = 38;
       const DOWN_KEY = 40;
-      
+    
     // Prevent the snake from reversing
     
       if (changing_direction) return;
@@ -136,6 +137,7 @@ const board_border = 'black';
       const goingDown = dy === 10;
       const goingRight = dx === 10;
       const goingLeft = dx === -10;
+
       if (keyPressed === LEFT_KEY && !goingRight) {
         dx = -10;
         dy = 0;
