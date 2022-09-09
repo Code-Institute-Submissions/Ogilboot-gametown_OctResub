@@ -30,17 +30,17 @@ class Block {
 const blocks = [
     new Block(10,270),
     new Block(120,270),
-    new Block(230,270),
+    //new Block(230,270),
     //new Block(340,270),
     //new Block(450,270),
     new Block(10,240),
     new Block(120,240),
-    new Block(230,240),
+    //new Block(230,240),
     //new Block(340,240),
     //new Block(450,240),
     new Block(10,210),
     new Block(120,210),
-    new Block(230,210),
+    //new Block(230,210),
     //new Block(340,210),
     //new Block(450,210),
 ]
@@ -59,15 +59,15 @@ function addBlocks() {
 addBlocks()
 
 // add player
-const player = document.createElement('div')
-player.classList.add('player')
+const player2 = document.createElement('div')
+player2.classList.add('player2')
 drawPlayer()
-grid2.appendChild(player)
+grid2.appendChild(player2)
 
 //draw the player
 function drawPlayer() {
-    player.style.left = currentPosition[0] + 'px'
-    player.style.bottom = currentPosition[1] + 'px'
+    player2.style.left = currentPosition[0] + 'px'
+    player2.style.bottom = currentPosition[1] + 'px'
 }
 
 //draw the ball
