@@ -1,19 +1,19 @@
-const grid = document.querySelector('.grid')
+const grid2 = document.querySelector('.grid2')
 const scoreDisplay = document.querySelector('#score')
 const blockWidth = 100
 const blockHeight = 20
 const ballDiameter = 20
-const boardWidth = 560
+const boardWidth = 280
 const boardHeight = 300
 let timerId 
 let xDirection = 2
 let yDirection = 2
 let score = 0
 
-const playerStart = [230, 10]
+const playerStart = [115, 5]
 let currentPosition = playerStart
 
-const ballStart = [270, 40]
+const ballStart = [135, 30]
 let ballCurrentPosition = ballStart
 
 //creates block individual
@@ -31,18 +31,18 @@ const blocks = [
     new Block(10,270),
     new Block(120,270),
     new Block(230,270),
-    new Block(340,270),
-    new Block(450,270),
+    //new Block(340,270),
+    //new Block(450,270),
     new Block(10,240),
     new Block(120,240),
     new Block(230,240),
-    new Block(340,240),
-    new Block(450,240),
+    //new Block(340,240),
+    //new Block(450,240),
     new Block(10,210),
     new Block(120,210),
     new Block(230,210),
-    new Block(340,210),
-    new Block(450,210),
+    //new Block(340,210),
+    //new Block(450,210),
 ]
 
 //creates blocks
@@ -52,7 +52,7 @@ function addBlocks() {
         block.classList.add('block')
         block.style.left = blocks[i].bottomLeft[0] + 'px'
         block.style.bottom = blocks[i].bottomLeft[1] + 'px'
-        grid.appendChild(block)
+        grid2.appendChild(block)
     }
 }
 
@@ -62,7 +62,7 @@ addBlocks()
 const player = document.createElement('div')
 player.classList.add('player')
 drawPlayer()
-grid.appendChild(player)
+grid2.appendChild(player)
 
 //draw the player
 function drawPlayer() {
@@ -101,7 +101,7 @@ document.addEventListener('keydown', movePlayer)
 const ball = document.createElement('div')
 ball.classList.add('ball')
 drawBall()
-grid.appendChild(ball)
+grid2.appendChild(ball)
 
 // move the ball
 function moveBall() {

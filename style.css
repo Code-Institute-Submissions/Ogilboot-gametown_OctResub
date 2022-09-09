@@ -35,6 +35,8 @@ a:hover {
   text-decoration: none;
 }
 
+
+
 /* blockbattle styling */
 
 .grid {
@@ -44,6 +46,15 @@ a:hover {
     border: double #36454F 5px;
     margin-top: 50px;
     background: white;
+}
+
+.grid2 {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  border: double #36454F 5px;
+  margin-top: 50px;
+  background: white;
 }
 
 .block {
