@@ -118,6 +118,22 @@ a:hover {
   padding-top: 250px;
 }
 
+.control-container-snaketop {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+}
+
+.control-container-snakeother {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
 #textbox {
   padding-top: 100px;
 }
@@ -199,10 +215,19 @@ button:focus{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #score {
   text-align: center;
   font-size: 70px;
   text-decoration: underline #800020;
+}
+
+#left-snake-button {
+  margin-right: 15px;
+}
+
+#right-snake-button {
+  margin-left: 15px;
 }
 
 /* card styling */
