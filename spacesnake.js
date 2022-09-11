@@ -127,6 +127,7 @@ const board_border = 'black';
       const RIGHT_KEY = 39;
       const UP_KEY = 38;
       const DOWN_KEY = 40;
+
     
     // Prevent the snake from reversing
     
@@ -181,4 +182,26 @@ document.addEventListener("DOMContentLoaded", function () {
     newVal.innerHTML = '';
     pTag.appendChild(newVal);
   });
+
+  // mobile  controls 
+
+  document.getElementById("left-snake-button").addEventListener("click", function() {
+    dx = -10;
+    dy = 0;
+    })
+
+  document.getElementById("right-snake-button").addEventListener("click", function() {
+    dx = 10;
+    dy = 0;
+      })
+  
+  document.getElementById("up-snake-button").addEventListener("click", function() {
+    dx = 0;
+    dy = -10;
+        })
+
+  document.getElementById("down-snake-button").addEventListener("click", function() {
+    dx = 0;
+    dy = 10;
+          })
 

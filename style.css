@@ -207,6 +207,10 @@ button:focus{
   background-color: #44b927;
 } 
 
+#memory-card {
+  margin-bottom: 25px;
+}
+
 /* spacesnake styling */
 
 #snakeboard {
