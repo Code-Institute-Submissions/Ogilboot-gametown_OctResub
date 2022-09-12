@@ -1,10 +1,10 @@
 const grid2 = document.querySelector('.grid2')
 const scoreDisplay = document.querySelector('#score')
-const blockWidth = 50
+const blockWidth = 60
 const blockHeight = 20
-const ballDiameter = 15
+const ballDiameter = 20
 const boardWidth = 280
-const boardHeight = 300
+const boardHeight = 350
 let timerId 
 let xDirection = 2
 let yDirection = 2
@@ -32,21 +32,18 @@ class Block2 {
 
 // All blocks
 const blocks = [
-    new Block2(20,270),
-    new Block2(130,270),
-    //new Block(230,270),
-    //new Block(340,270),
-    //new Block(450,270),
-    new Block2(20,240),
-    new Block2(130,240),
-    //new Block(230,240),
-    //new Block(340,240),
-    //new Block(450,240),
-    new Block2(20,210),
-    new Block2(130,210),
-    //new Block(230,210),
-    //new Block(340,210),
-    //new Block(450,210),
+    new Block2(17,270),
+    new Block2(77,270),
+    new Block2(137,270),
+    new Block2(197,270),
+    new Block2(17,240),
+    new Block2(77,240),
+    new Block2(137,240),
+    new Block2(197,240),
+    new Block2(17,210),
+    new Block2(77,210),
+    new Block2(137,210),
+    new Block2(197,210),
 ]
 
 //creates blocks

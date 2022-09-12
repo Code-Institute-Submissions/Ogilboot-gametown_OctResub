@@ -51,7 +51,7 @@ a:hover {
 .grid2 {
   position: absolute;
   width: 280px;
-  height: 300px;
+  height: 350px;
   border: double #36454F 5px;
   margin-top: 50px;
   background: white;
@@ -95,8 +95,8 @@ a:hover {
 
 .ball2 {
   position: absolute;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   border-radius: 10px;
   background: #BC3823;
 } 
