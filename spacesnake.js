@@ -1,6 +1,6 @@
     const board_border = 'black';
     const board_background = "white";
-    const snake_col = 'lightblue';
+    const snake_col = '#BC3823';
     const snake_border = 'black';
 
     let mySound = new Audio('assets/music/score-sound2.wav')
@@ -82,8 +82,8 @@
     }
 
     function drawFood() {
-      snakeboard_ctx.fillStyle = 'lightgreen';
-      snakeboard_ctx.strokestyle = 'darkgreen';
+      snakeboard_ctx.fillStyle = '#008080';
+      snakeboard_ctx.strokestyle = 'black';
       snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
       snakeboard_ctx.strokeRect(food_x, food_y, 10, 10);
     }
