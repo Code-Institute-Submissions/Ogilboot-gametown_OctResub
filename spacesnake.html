@@ -57,9 +57,6 @@
       <!--controls section -->
       <div class="control-container-snaketop">
         <button type="button" class="btn btn-lg btn-danger" id="up-snake-button">Up</button>
-        <!-- <button type="button" class="btn btn-lg  btn-warning" id="down-snake-button">Down</button>
-        <button type="button" class="btn btn-lg btn-success" id="left-snake-button">Left</button>
-        <button type="button" class="btn btn-lg  btn-primary" id="right-snake-button">Right</button> -->
       </div> 
       <div class="control-container-snakeother">
         <button type="button" class="btn btn-lg btn-success" id="left-snake-button" onclick="change_direction()">Left</button>
@@ -77,14 +74,16 @@
 
         <!-- play button-->
         <button type="button" class="btn btn-success" id="snake-start">Reload Game</button>
-        <div class="card-header bg-warning"><h5>SpaceSnake</h5></div>
+
+        <!-- score -->
         <div id="score" class="block-score-container">0</div>
         <div class="card-body">
-          <p class="card-text">SpaceSnake is a prototype attempt to recreate the classic Gremlin Industries game 'Blockade', originally released in 1976. </p>
-          <hr>
 
           <!-- instructions list-->
+          <div class="card-header bg-warning"><h5>SpaceSnake</h5></div>
           <h5 class="card-header bg-primary">Instructions:</h5>
+          <hr>
+          <p class="card-text">SpaceSnake is a prototype attempt to recreate the classic Gremlin Industries game 'Blockade', originally released in 1976. </p>
           <ul class="list-group">
             <li class="list-group-item"><b>1:</b> Use the arrow keys to move the Snake and intercept the 'Food' blocks.</li>
             <li class="list-group-item"><b>2:</b> Don't let the Snake hit the sides or you will lose.</li>

@@ -1,3 +1,6 @@
+let mySound = new Audio('assets/music/blockbattle-music.mp3')
+mySound.play()
+
 const quizData = [
   {
       question: "What is the average age of gamers in the USA?",

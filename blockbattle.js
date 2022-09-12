@@ -9,6 +9,8 @@ let timerId
 let xDirection = 2
 let yDirection = 2
 let score = 0
+let mySound = new Audio('assets/music/blockbattle-music.mp3')
+mySound.play()
 
 const playerStart = [230, 10]
 let currentPosition = playerStart
@@ -206,3 +208,4 @@ function changeDirection() {
         drawPlayer()
     }
     })
+

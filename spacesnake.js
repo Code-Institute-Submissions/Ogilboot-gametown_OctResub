@@ -1,8 +1,10 @@
-const board_border = 'black';
+    const board_border = 'black';
     const board_background = "white";
     const snake_col = 'lightblue';
     const snake_border = 'darkblue';
-    
+    let mySound = new Audio('assets/music/blockbattle-music.mp3')
+    mySound.play()
+
     let snake = [
       {x: 200, y: 200},
       {x: 190, y: 200},
@@ -204,4 +206,5 @@ document.addEventListener("DOMContentLoaded", function () {
     dx = 0;
     dy = 10;
           })
+
 
