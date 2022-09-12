@@ -5,6 +5,7 @@
 
     let mySound = new Audio('assets/music/score-sound2.wav')
     let mySound2 = new Audio('assets/music/snake-music.wav')
+    let mySound3 = new Audio('assets/music/game-loser.wav')
 
     let snake = [
       {x: 200, y: 200},
@@ -30,22 +31,23 @@
     // Return a two dimensional drawing context
     const snakeboard_ctx = snakeboard.getContext("2d");
 
-    // Reloads game
-    document.getElementById("snake-start").addEventListener("click", function() {
-      document.location.reload()
+    clear_board();
+    
+    // start game button
+    document.getElementById("snake-startgame").addEventListener("click", function() {
+      main();
+      gen_food();
+      document.addEventListener("keydown", change_direction);
     });
-
-    // Start game
-    main();
-
-    gen_food();
-
-    document.addEventListener("keydown", change_direction);
     
     // main function called repeatedly to keep the game running
     function main() {
 
-        if (has_game_ended()) return;
+        if (has_game_ended()) {
+          mySound3.play();
+          setInterval(reloadGame(), 3000);
+        }
+
         mySound2.play()
 
         changing_direction = false;
@@ -217,3 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }, false);
 
+// reloadGame function
+function reloadGame() {
+  document.location.reload();
+}
