@@ -64,12 +64,12 @@ a:hover {
     background-color: #36454F;
 }
 
-/* .block2 {
+.block2 {
   position: absolute;
   width: 50px;
-  height: 10px;
+  height: 20px;
   background-color: #36454F;
-} */
+} 
 
 .player {
     position: absolute;
@@ -92,6 +92,14 @@ a:hover {
     border-radius: 10px;
     background: #BC3823;
 }
+
+.ball2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: #BC3823;
+} 
 
 /* game placement styling */
 

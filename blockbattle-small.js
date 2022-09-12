@@ -1,8 +1,8 @@
 const grid2 = document.querySelector('.grid2')
 const scoreDisplay = document.querySelector('#score')
-const blockWidth = 100
+const blockWidth = 50
 const blockHeight = 20
-const ballDiameter = 20
+const ballDiameter = 15
 const boardWidth = 280
 const boardHeight = 300
 let timerId 
@@ -21,7 +21,7 @@ const ballStart = [135, 30]
 let ballCurrentPosition = ballStart
 
 //creates block individual
-class Block {
+class Block2 {
     constructor(xAxis, yAxis) {
         this.bottomLeft = [xAxis,yAxis]
         this.bottomRight = [xAxis + blockWidth, yAxis]
@@ -32,18 +32,18 @@ class Block {
 
 // All blocks
 const blocks = [
-    new Block(10,270),
-    new Block(120,270),
+    new Block2(20,270),
+    new Block2(130,270),
     //new Block(230,270),
     //new Block(340,270),
     //new Block(450,270),
-    new Block(10,240),
-    new Block(120,240),
+    new Block2(20,240),
+    new Block2(130,240),
     //new Block(230,240),
     //new Block(340,240),
     //new Block(450,240),
-    new Block(10,210),
-    new Block(120,210),
+    new Block2(20,210),
+    new Block2(130,210),
     //new Block(230,210),
     //new Block(340,210),
     //new Block(450,210),
@@ -52,11 +52,11 @@ const blocks = [
 //creates blocks
 function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
-        const block = document.createElement('div')
-        block.classList.add('block')
-        block.style.left = blocks[i].bottomLeft[0] + 'px'
-        block.style.bottom = blocks[i].bottomLeft[1] + 'px'
-        grid2.appendChild(block)
+        const block2 = document.createElement('div')
+        block2.classList.add('block2')
+        block2.style.left = blocks[i].bottomLeft[0] + 'px'
+        block2.style.bottom = blocks[i].bottomLeft[1] + 'px'
+        grid2.appendChild(block2)
     }
 }
 
@@ -76,8 +76,8 @@ function drawPlayer() {
 
 //draw the ball
 function drawBall () {
-    ball.style.left = ballCurrentPosition[0] + 'px'
-    ball.style.bottom = ballCurrentPosition[1] + 'px'
+    ball2.style.left = ballCurrentPosition[0] + 'px'
+    ball2.style.bottom = ballCurrentPosition[1] + 'px'
 }
 
 
@@ -102,10 +102,10 @@ function movePlayer(e) {
 document.addEventListener('keydown', movePlayer)
 
 // add ball
-const ball = document.createElement('div')
-ball.classList.add('ball')
+const ball2 = document.createElement('div')
+ball2.classList.add('ball2')
 drawBall()
-grid2.appendChild(ball)
+grid2.appendChild(ball2)
 
 // move the ball
 function moveBall() {
@@ -125,9 +125,9 @@ function checkForCollisions() {
             (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0]) &&
             ((ballCurrentPosition[1] + ballDiameter ) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
         ) {
-            const allBlocks = Array.from(document.querySelectorAll('.block'))
+            const allBlocks = Array.from(document.querySelectorAll('.block2'))
             mySound.play()
-            allBlocks[i].classList.remove('block')
+            allBlocks[i].classList.remove('block2')
             blocks.splice(i, 1)
             changeDirection()
             score++
