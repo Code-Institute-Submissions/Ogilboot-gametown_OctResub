@@ -5,7 +5,7 @@
 
     let mySound = new Audio('assets/music/score-sound2.wav')
     let mySound2 = new Audio('assets/music/snake-music.wav')
-    let mySound3 = new Audio('assets/music/game-loser.wav')
+    let mySound3 = new Audio('assets/music/snake-loser.wav')
 
     let snake = [
       {x: 200, y: 200},
@@ -44,8 +44,10 @@
     function main() {
 
         if (has_game_ended()) {
-          mySound3.play();
-          setInterval(reloadGame(), 3000);
+          setInterval(reloadGame, 2000);
+          mySound3.play()
+          alert("Bad Luck! You Lose.");
+          return;
         }
 
         mySound2.play()

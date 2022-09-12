@@ -112,8 +112,6 @@ function moveBall() {
     checkForCollisions()
 } 
 
-timerId = setInterval(moveBall, 20) 
-
 // check for collisions
 function checkForCollisions() {
     // check for block collisions
@@ -167,6 +165,7 @@ function checkForCollisions() {
         scoreDisplay.innerHTML = 'Loser!'
         mySound3.play()
         document.removeEventListener('keydown', movePlayer)
+        setTimeout(reloadGame, 2000)
     }
 
 }
@@ -191,9 +190,9 @@ function changeDirection() {
     }
 }
 
- // Reloads game on button click
+ // starts game on button click
  document.getElementById("block-start").addEventListener("click", function() {
-    document.location.reload()
+    timerId = setInterval(moveBall, 15);
  });
 
   // moves left on mobile
@@ -217,3 +216,8 @@ function changeDirection() {
         e.preventDefault();
     }
 }, false);
+
+// reload game function
+function reloadGame() {
+    document.location.reload();
+}
