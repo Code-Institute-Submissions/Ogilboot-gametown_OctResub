@@ -9,8 +9,10 @@ let timerId
 let xDirection = 2
 let yDirection = 2
 let score = 0
-let mySound = new Audio('assets/music/blockbattle-music.mp3')
-mySound.play()
+
+let mySound = new Audio('assets/music/score-sound2.wav')
+let mySound2 = new Audio('assets/music/game-winner.wav')
+let mySound3 = new Audio('assets/music/game-loser.wav')
 
 const playerStart = [230, 10]
 let currentPosition = playerStart
@@ -129,10 +131,12 @@ function checkForCollisions() {
             changeDirection()
             score++
             scoreDisplay.innerHTML = score
+            mySound.play()
 
             //check for win
             if (blocks.length === 0) {
                 scoreDisplay.innerHTML = 'Winner!'
+                mySound2.play()
                 clearInterval(timerId)
                 document.removeEventListener('keydown', movePlayer)
                 setTimeout(reloadGame, 3000)
@@ -164,6 +168,7 @@ function checkForCollisions() {
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId)
         scoreDisplay.innerHTML = 'Loser!'
+        mySound3.play()
         document.removeEventListener('keydown', movePlayer)
     }
 

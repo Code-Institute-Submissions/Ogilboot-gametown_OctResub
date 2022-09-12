@@ -1,9 +1,10 @@
     const board_border = 'black';
     const board_background = "white";
     const snake_col = 'lightblue';
-    const snake_border = 'darkblue';
-    let mySound = new Audio('assets/music/blockbattle-music.mp3')
-    mySound.play()
+    const snake_border = 'black';
+
+    let mySound = new Audio('assets/music/score-sound2.wav')
+    let mySound2 = new Audio('assets/music/snake-music.wav')
 
     let snake = [
       {x: 200, y: 200},
@@ -45,6 +46,7 @@
     function main() {
 
         if (has_game_ended()) return;
+        mySound2.play()
 
         changing_direction = false;
         setTimeout(function onTick() {
@@ -168,6 +170,7 @@
       if (has_eaten_food) {
         // Increase score
         score += 10;
+        mySound.play()
         // Display score on screen
         document.getElementById('score').innerHTML = score;
         // Generate new food location
@@ -207,4 +210,8 @@ document.addEventListener("DOMContentLoaded", function () {
     dy = 10;
           })
 
+
+if (has_game_ended() === true) {
+  mySound3.play()
+}
 
