@@ -1,6 +1,3 @@
-let mySound = new Audio('assets/music/blockbattle-music.mp3')
-mySound.play()
-
 const quizData = [
   {
       question: "What is the average age of gamers in the USA?",
@@ -84,6 +81,10 @@ const submitBtn = document.getElementById('submit')
 let currentQuiz = 0
 let score = 0
 
+// SFX
+let mySound = new Audio('assets/music/quiz-answer.wav')
+let mySound2 = new Audio('assets/music/quiz-finished.wav')
+
 loadQuiz()
 
 function loadQuiz() {
@@ -115,6 +116,7 @@ function getSelected() {
 
 
 submitBtn.addEventListener('click', () => {
+  mySound.play()
   const answer = getSelected()
   if(answer) {
      if(answer === quizData[currentQuiz].correct) {
@@ -126,6 +128,7 @@ submitBtn.addEventListener('click', () => {
      if(currentQuiz < quizData.length) {
          loadQuiz()
      } else {
+         mySound2.play()
          quiz.innerHTML = `
          <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
