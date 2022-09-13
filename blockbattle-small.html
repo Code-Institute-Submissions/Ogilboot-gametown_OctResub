@@ -46,6 +46,51 @@
        
     </header>
 
+    <!-- instructions bar -->
+  <section id="modal">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
+Instructions
+</button>
+
+  <!-- play button-->
+  <button type="button" class="btn btn-success" id="block-start">
+    Start Game
+  </button>
+
+  <!--score section-->
+  <button type="button" class="btn btn-danger">
+    <div id="score" class="block-score-container">0</div>
+  </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h5 class="card-header bg-danger">Instructions:</h5>
+    <ul class="list-group">
+      <li class="list-group-item"><b>1:</b> Use the Left & Right arrow keys to move the paddle and intercept the bouncing ball into the blocks.</li>
+      <li class="list-group-item"><b>2:</b> Don't let the ball hit the bottom line or you will lose.</li>
+      <li class="list-group-item"><b>3:</b> You will score 1 for each block destroyed.</li>
+      <li class="list-group-item"><b>4:</b> Use the <button type="button" class="btn btn-success" id="block-start">Start Game</button> button to reload.</li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+</section> 
+
+<!--------->
+
     <!-- blockbattle sm-->
     <section>
       <div class="container">
@@ -56,39 +101,10 @@
         <button type="button" class="btn btn-lg  btn-dark" id="right-button">Right</button>
       </div>
     </section>
- 
-    <!-- card styled text section -->
-    <section id="textbox">
-      <div class="col-md-6 card">
-        
-        <!-- play button-->
-        <button type="button" class="btn btn-success" id="block-start">Start Game</button>
-
-
-        <hr>
-        <div id="score" class="block-score-container">0</div>
-        <hr>
-        <div class="card-body">
-          <div class="card-header bg-danger"><h5>BlockBattle</h5></div>
-          <h5 class="card-header bg-warning">Instructions:</h5>
-          <hr>
-          <p class="card-text">BlockBattle is a prototype attempt to recreate the classic Atari game 'Breakout', originally released on May 13, 1976. </p>
-          
-          <!-- instructions list-->
-          <ul class="list-group">
-            <li class="list-group-item"><b>1:</b> Use the Left & Right arrow keys to move the paddle and intercept the bouncing ball into the blocks.</li>
-            <li class="list-group-item"><b>2:</b> Don't let the ball hit the bottom line or you will lose.</li>
-            <li class="list-group-item"><b>3:</b> You will score 1 for each block destroyed.</li>
-            <li class="list-group-item"><b>4:</b> Use the <button type="button" class="btn btn-success" id="block-start">Start</button> Game</button> button to reload.</li>
-          </ul>
-          
-        </div>
-      </div>
-    </section>
 
           <!--Footer -->
 
-          <footer class="footer">
+          <footer class="footer fixed-bottom">
             <div class="container-fluid text-center">
             <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook"></i></a>
             <a href="https://twitter.com/?lang=en" target="blank"><i class="fa fa-twitter"></i></a>

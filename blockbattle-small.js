@@ -83,13 +83,13 @@ function movePlayer(e) {
     switch(e.key) {
         case 'ArrowLeft':
             if (currentPosition[0] > 0) {
-                currentPosition[0] -= 10
+                currentPosition[0] -= 20
                 drawPlayer()
             }
             break;
         case 'ArrowRight':
             if (currentPosition[0] < boardWidth - blockWidth) {
-                currentPosition[0] +=10
+                currentPosition[0] +=20
                 drawPlayer()
             }
             break;
@@ -192,7 +192,7 @@ function changeDirection() {
 
  // starts game on button click
  document.getElementById("block-start").addEventListener("click", function() {
-    timerId = setInterval(moveBall, 15);
+    timerId = setInterval(moveBall, 20);
  });
 
   // moves left on mobile
