@@ -49,9 +49,19 @@
           <!-- instructions bar -->
           <section id="modal">
             <!-- Button trigger modal -->
-    <button type="button" class="btn-large btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
+    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">
       Instructions
     </button>
+
+          <!-- play button-->
+          <button type="button" class="btn btn-success" id="block-start">
+            Start Game
+          </button>
+
+          <!--score section-->
+          <button type="button" class="btn btn-success">
+            <div id="score" class="block-score-container">0</div>
+          </button>
     
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -95,21 +105,11 @@
       </div>
     </section>
  
-    <!-- card styled text section -->
-    <section id="textbox">
-      <div class="col-md-6 card">
-        
-        <!-- play button-->
-        <button type="button" class="btn btn-success" id="block-start">Start Game</button>
 
         <hr>
-        <div id="score" class="block-score-container">0</div>
+
         <hr>
-        <div class="card-body">
-          
-        </div>
-      </div>
-    </section>
+
 
           <!--Footer -->
 
