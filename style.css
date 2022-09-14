@@ -112,11 +112,11 @@ a:hover {
 }
 
 .snake-container {
-  height: 200px;
+  height: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 250px;
+  margin-top: 220px;
   margin-left: 300px;
 }
 
@@ -136,7 +136,7 @@ a:hover {
 }
 
 .control-container-snaketop {
-  height: 20px;
+  height: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
