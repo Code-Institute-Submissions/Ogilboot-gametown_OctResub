@@ -33,10 +33,13 @@
 
     clear_board();
     
-    // start game button
+    // start game button with 3 second timer for recurring functions
     document.getElementById("snake-startgame").addEventListener("click", function() {
-      main();
-      gen_food();
+      alert("Get Ready! The game will begin 3 seconds after you click 'OK', and the snake is quick!");
+      setTimeout(main, 3000);
+      setTimeout(gen_food, 3000);
+      //main();
+      //gen_food();
       document.addEventListener("keydown", change_direction);
     });
     
