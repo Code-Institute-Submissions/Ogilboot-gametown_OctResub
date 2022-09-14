@@ -116,8 +116,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 175px; */
-  margin: 0;
+  margin-top: 250px;
+  margin-left: 300px;
 }
 
 .block-score-container {
@@ -140,7 +140,6 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 500px;
 }
 
 .control-container-snakeother {
@@ -156,7 +155,8 @@ a:hover {
 }
 
 #modal {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  padding-top: 20px;
 }
 
 #modal-mobile {
@@ -243,7 +243,7 @@ button:focus{
 /* spacesnake styling */
 
 #snakeboard {
-  position: absolute;
+  /*position: absolute;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
