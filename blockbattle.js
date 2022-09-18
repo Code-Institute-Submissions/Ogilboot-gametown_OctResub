@@ -25,10 +25,10 @@ let ballCurrentPosition = ballStart;
 //creates block individual
 class Block {
     constructor(xAxis, yAxis) {
-        this.bottomLeft = [xAxis,yAxis]
-        this.bottomRight = [xAxis + blockWidth, yAxis]
-        this.topLeft = [xAxis, yAxis + blockHeight]
-        this.topRight = [xAxis + blockWidth, yAxis + blockHeight]
+        this.bottomLeft = [xAxis,yAxis];
+        this.bottomRight = [xAxis + blockWidth, yAxis];
+        this.topLeft = [xAxis, yAxis + blockHeight];
+        this.topRight = [xAxis + blockWidth, yAxis + blockHeight];
     }
 }
 
@@ -49,50 +49,50 @@ const blocks = [
     new Block(230,210),
     new Block(340,210),
     new Block(450,210),
-]
+];
 
 //creates blocks
 function addBlocks() {
     for (let i = 0; i < blocks.length; i++) {
-        const block = document.createElement('div')
-        block.classList.add('block')
-        block.style.left = blocks[i].bottomLeft[0] + 'px'
-        block.style.bottom = blocks[i].bottomLeft[1] + 'px'
+        const block = document.createElement("div")
+        block.classList.add("block")
+        block.style.left = blocks[i].bottomLeft[0] + "px"
+        block.style.bottom = blocks[i].bottomLeft[1] + "px"
         grid.appendChild(block)
     }
 }
 
-addBlocks()
+addBlocks();
 
 // add player
-const player = document.createElement('div')
-player.classList.add('player')
+const player = document.createElement("div")
+player.classList.add("player")
 drawPlayer()
 grid.appendChild(player)
 
 //draw the player
 function drawPlayer() {
-    player.style.left = currentPosition[0] + 'px'
-    player.style.bottom = currentPosition[1] + 'px'
+    player.style.left = currentPosition[0] + "px"
+    player.style.bottom = currentPosition[1] + "px"
 }
 
 //draw the ball
 function drawBall () {
-    ball.style.left = ballCurrentPosition[0] + 'px'
-    ball.style.bottom = ballCurrentPosition[1] + 'px'
+    ball.style.left = ballCurrentPosition[0] + "px"
+    ball.style.bottom = ballCurrentPosition[1] + "px"
 }
 
 
 //move player
 function movePlayer(e) {
     switch(e.key) {
-        case 'ArrowLeft':
+        case "ArrowLeft":
             if (currentPosition[0] > 0) {
                 currentPosition[0] -= 20
                 drawPlayer()
             }
             break;
-        case 'ArrowRight':
+        case "ArrowRight":
             if (currentPosition[0] < boardWidth - blockWidth) {
                 currentPosition[0] +=20
                 drawPlayer()
@@ -101,11 +101,11 @@ function movePlayer(e) {
     }
 }
 
-document.addEventListener('keydown', movePlayer)
+document.addEventListener("keydown", movePlayer)
 
 // add ball
-const ball = document.createElement('div')
-ball.classList.add('ball')
+const ball = document.createElement("div")
+ball.classList.add("ball")
 drawBall()
 grid.appendChild(ball)
 
@@ -115,9 +115,9 @@ function moveBall() {
     ballCurrentPosition[1] += yDirection
     drawBall()
     checkForCollisions()
-} 
+}
 
-// timerId = setInterval(moveBall, 15) 
+// timerId = setInterval(moveBall, 15)
 
 // check for collisions
 function checkForCollisions() {
@@ -127,8 +127,8 @@ function checkForCollisions() {
             (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0]) &&
             ((ballCurrentPosition[1] + ballDiameter ) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
         ) {
-            const allBlocks = Array.from(document.querySelectorAll('.block'))
-            allBlocks[i].classList.remove('block')
+            const allBlocks = Array.from(document.querySelectorAll(".block"))
+            allBlocks[i].classList.remove("block")
             blocks.splice(i, 1)
             changeDirection()
             score++
@@ -137,10 +137,10 @@ function checkForCollisions() {
 
             //check for win
             if (blocks.length === 0) {
-                scoreDisplay.innerHTML = 'Winner!'
+                scoreDisplay.innerHTML = "Winner!"
                 mySound2.play()
                 clearInterval(timerId)
-                document.removeEventListener('keydown', movePlayer)
+                document.removeEventListener("keydown", movePlayer)
                 setTimeout(reloadGame, 3000)
             }
 
@@ -157,9 +157,9 @@ function checkForCollisions() {
 
     // check for wall collisions
     if (
-        ballCurrentPosition[0] >= (boardWidth - ballDiameter) || 
+        ballCurrentPosition[0] >= (boardWidth - ballDiameter) ||
         ballCurrentPosition[1] >= (boardHeight - ballDiameter) ||
-        ballCurrentPosition[0] <= 0 
+        ballCurrentPosition[0] <= 0
         ) {
         changeDirection()
     }
@@ -167,9 +167,9 @@ function checkForCollisions() {
     // check for game over
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId)
-        scoreDisplay.innerHTML = 'Loser!'
+        scoreDisplay.innerHTML = "Loser!"
         mySound3.play()
-        document.removeEventListener('keydown', movePlayer)+
+        document.removeEventListener("keydown", movePlayer)+
         setTimeout(reloadGame, 2000)
     }
 
@@ -179,7 +179,7 @@ function checkForCollisions() {
 function changeDirection() {
     if (xDirection === 2 && yDirection === 2) {
         yDirection = -2
-        return 
+        return
     }
     if (xDirection === 2 && yDirection === -2) {
         xDirection = -2
