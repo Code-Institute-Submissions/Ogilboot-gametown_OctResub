@@ -105,7 +105,6 @@ We focused on using a vibrant colour palette which suited our ongoing 'Retro Gam
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
 - [Balsamiq](https://balsamiq.com/)
 - [Canva](https://www.canva.com/)
-- [Pixabay](https://pixabay.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Google-Fonts](https://fonts.google.com/)
 - [Font-Awesome](https://fontawesome.com/)
@@ -113,6 +112,8 @@ We focused on using a vibrant colour palette which suited our ongoing 'Retro Gam
 - [Gitpod](https://www.gitpod.io/docs/languages/html)
 - [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/)
 - [W3C-HTML-Validator](https://validator.w3.org/)
+- [JSlint](https://www.jslint.com/)
+
 ---
 # Testing
 ---
@@ -122,11 +123,15 @@ We focused on using a vibrant colour palette which suited our ongoing 'Retro Gam
 - Firstly, we ran our code through two validators, testing both HTML & CSS. 
 - All of our HTML pages returned no errors when run through the [W3C-HTML-Validator](https://validator.w3.org/). A partial screenshot of the output is provided below. 
 
-- [HTML Pass](/assets/images/HTML-pass.png)
+- [HTML Pass](/assets/images/html-pass1.png)
 
 - Our CSS page also returned no errors, when run through the [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/validator).A partial screenshot of the output is provided below. 
 
-- [CSS Pass](/assets/images/CSS-pass.png)
+- [CSS Pass](/assets/images/css-pass1.png)
+
+- Our JS returned minimal errors when run through, with no major errors shown [JSlint](https://www.jslint.com/).A partial screenshot of the output is provided below. 
+
+- [CSS Pass](/assets/images/js-pass.png)
 
 
 
@@ -158,19 +163,19 @@ Our site was tested across the following browsers, with no issues found. All ele
 ## User Stories: 
 
 > As a user I want to be excited upon first seeing the site.
-- The large hero-image and three smaller images displayed immediately below present a sense of excitement, linking the user in a small way to the real festival experience. The Homepage is intentionally designed to be uncluttered and bold in stlye, in order to bring this imagery to the forefront, with easily navigable buttons and navigation menus in sight ready for the user to take the next step.
+- We feel the bold, retro styling of the homepage achieves this goal. The large hero images direct the users attention to the individual games and their artwork we feel looks exciting and engaging.
 > As a user I want the site to be easily navigable. 
-- Our Nav menu remains clearly visible at all device sizes, remaining in the Header of the site should our users need to quickly navigate the site. We also have navigation buttons attached to the three smaller images at the bottom of each pages body section, allowing for a secondary means of navigation to the most popular sections of our site.
-> As a user I want to be able to access key information easily. 
-- Our 'Info' page presents a range of key information accessible with a single click on the Navigation menu. We also have a seperate page for our 'Lineup' information, should visitors want to find out which bands are playing at the festival, again accessible from any point with a single click. Finally, our 'Contact' page allows for users to get in touch with anything not addressed on the site itself. 
-> As a user I want to be able to contact the festival if needed.
-- As mentioned above, our 'Contact' page includes a fully responsive and interative contact form, through which our users can connect with us directly should they need to. 
-> As a user I want to find the lineup easly and want it to be presented in a pleasing format.
-- We have dedicated a page of its own to our 'Lineup' poster, which is fully responsive and presented in a visually pleasing manner. The colours used on the poster itself are in line with those mirrored across the site in order to maintain design integrity, and impart a fun, relaxed feel to the user. 
-> As a user I want to be able to find the Festivals social media links easily. 
-- Our social media links are clearly displayed in the 'Footer' section of each page, accessible with a single click. We left this footer section blank other than the Social Media links in order to draw clear attention to these.
-> As a user I want to see images of the festival in full swing. 
-- Images of the festival in process are displayed throughout the website, both on the Homepage and in the three smaller images consistent along the bottom of each individual page. We would like to add a 'Gallery' page to future iterations of the site. 
+- The large hero-image carousel on the Homepage contains easily identifiable 'Play Now' buttons at their bottom, while the easy to navigate main navigation menu sits in the site Header, brightly coloured and easily spotted / usable. We feel this simple yet effective structure helps our site achieve this goal.
+> As a user I want to be able to access the games easily. 
+- At any point on the site you are never more than three clicks away from playing any particular game. The structure is very simple, and poses little challenge for a user looking to jump into any of our games. 
+> As a user I want the games to provide a fun experience.
+- Our three unique games offer a variation of experiences for our users. Our extensive user-testing has found that people find these games to be a fun experience, though the lack of levels does detract from the 'Replayability' factor, in their current states. We plan on implementing more levels with increasing difficulties along with various other improvements to this aspect of the site, as commented upon in the 'Future Features' section. 
+> As a user I want the games to run with minimal bugs.
+- Over the course of their development many bugs have emerged and been solved. We consider the current state of the games to be very good for initial, one-level prototypes, with very few bugs present (as identified by our extensive in-house and user testing). 
+> As a user I want the game instructions to be easily viewable from the main viewpoint.
+- Each games' respective instructions are clearly labelled, stored in modal elements towards the top of the 'Game Page'. We have found that users had no trouble in identifying and using this feature of our site throughout user testing. 
+> As a user I want the website 'Theme' to be fitting of the retro-style content.
+- We feel this aspect of the site is particularly strong, with the design being minimal yet fitting of a 'Retro Arcade' style experience. Colours are carried throughout the site and combined according to the colour palettes popular at the time.  
 
 ## Bugs:
 
