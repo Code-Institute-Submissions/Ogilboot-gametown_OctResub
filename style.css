@@ -21,9 +21,6 @@
     color: white;
   }
 
-/* navbar styling */
-
-
 /* homepage styling */
 
 a {
@@ -155,7 +152,6 @@ a:hover {
 }
 
 #modal {
-  /* margin-top: 50px; */
   padding-top: 20px;
 }
 
@@ -243,7 +239,6 @@ button:focus{
 /* spacesnake styling */
 
 #snakeboard {
-  /*position: absolute;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

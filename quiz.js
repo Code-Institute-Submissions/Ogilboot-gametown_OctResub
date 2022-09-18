@@ -1,3 +1,5 @@
+// code partially copied and customised from 'codeWithNick' tutorial
+
 const quizData = [
   {
       question: "What is the average age of gamers in the USA?",

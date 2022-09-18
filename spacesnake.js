@@ -1,3 +1,5 @@
+    // code partially copied and customised from 'codeacademy' tutorial
+    
     const board_border = 'black';
     const board_background = "white";
     const snake_col = '#BC3823';

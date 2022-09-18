@@ -1,3 +1,5 @@
+// code partially copied and customised from 'codeacademy' tutorial
+
 const grid = document.querySelector('.grid')
 const scoreDisplay = document.querySelector('#score')
 const blockWidth = 100
