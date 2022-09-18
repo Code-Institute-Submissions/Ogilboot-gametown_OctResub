@@ -175,25 +175,28 @@ Our site was tested across the following browsers, with no issues found. All ele
 > As a user I want the game instructions to be easily viewable from the main viewpoint.
 - Each games' respective instructions are clearly labelled, stored in modal elements towards the top of the 'Game Page'. We have found that users had no trouble in identifying and using this feature of our site throughout user testing. 
 > As a user I want the website 'Theme' to be fitting of the retro-style content.
-- We feel this aspect of the site is particularly strong, with the design being minimal yet fitting of a 'Retro Arcade' style experience. Colours are carried throughout the site and combined according to the colour palettes popular at the time.  
+- We feel this aspect of the site is particularly strong, with the design being minimal yet fitting of a 'Retro Arcade' style experience. Colours are carried throughout the site and combined according to inspirational colour palettes popular at the time.  
 
 ## Bugs:
 
 ### Solved Bugs:
 
-> Accessibility issues were identified through our use of a [webDev-Measure-Tool](https://web.dev/measure/), in that we did not have 'discernible names' attached to our social media links and navigation buttons. 
-- We remedied this by adding discernible names to our social media buttons (e.g: Facebook) and applying a 'color: transparent' rule within our CSS in order to preserve our desired, minimal design. Aria-labels were then added to our navigation buttons in order to remedy this portion of the accessibility issues.
+> Reasonably significant performance issues were identified through our use of a [webDev-Measure-Tool](https://web.dev/measure/), in that our use of 'png' format for certain images was slowing our 'First Contextual Paint' down significantly. Extraneous CSS was also identified as a factor in slowing the overall functioning of the site.
+- We remedied this by converting these images to the more efficient 'webP' format, and greatly improved this metric. We then proceeded to clean our CSS up throughout, removing much inefficient and defunct code which had been left over from the development process. We intend to work on further improving the efficiency of the site moving forward.
 
-> We had initial issues with our Navigation-bar, having styled this with CSS incompatible with our desired responsiveness. The Menu itself clipped down the page, interfering with content further down our webpage.
-- We rectified this by replacing our old Navigation-bar design with a responsive, Bootstrap version. We then iterated upon this further by reducing the menu-size down to a 'Burger' display, dropdown menu upon resizing. This improved the overall professional look of our site markedly. 
+> Our intial design of the 'Game Pages' left a lot to be desired, with conflicting CSS rules causing issues with responsive placement of our 'Instructions | Start Game | Score' bars. 
+- After attempting many potential fixes (and receiving user feedback) we decided that the fundamental design of the page was flawed, so started again from scratch, moving the aforementioned bar from the bottom of the page (which required a user to scroll down and view) to just above the Game Zone of both BlockBattle & SpaceSnake respectively, greatly improving the UX and solving our issues with responsive design. 
 
-> Our 'Tickets' page originally had strange dots appearing within the list section, at angles from our intended 'li' element.
-- This turned out to be an unnecessary 'Div' element causing this, the removal of which achieved the design image we had originally had for the page.
+> Our 'Snake' developed a bug which increased its speed exponentially upon starting the game, quickly reaching the point of being impossible to control. 
+- This turned out to be an logic error we had introduced when trying to build the 'Move Snake' function. We remedied this bug by rolling the JS file back to a previous backup and rebuilding the function correctly, after which the bug has not resurfaced.
 
 ### Known Bugs:
 
 > [webDev-Measure-Tool](https://web.dev/measure/) still shows various small issues interfering with our site's performance primarily. These include images which are slow to load.
 - Although we have no had the time to address these issues as of writing this README, we will be addressing these issues in order to improve the overall performance and quality of the site as soon as we are able. 
+
+> There is currently a bug specific to use of the manual control buttons of SpaceSnake, wherein attempting to 'Reverse' the snake directly upon itself (e.g: hitting 'Left' when the snake is moving 'Right') leads to a Game Over trigger.
+- We are currently working to remedy this issue, however it is still live as of writing this README. 
 
 ## PageSpeed Insights:
 
@@ -211,19 +214,19 @@ In addition to the testing listen thus far, we have handed the website to four i
 
 We used 'Github Pages' to host our site.
 
-1. Navigate to the top menu of the project's [Repository](https://github.com/Ogilboot/pennfest) and click on 'Settings'.
+1. Navigate to the top menu of the project's [Repository](https://github.com/Ogilboot/gametown) and click on 'Settings'.
 2. Navigate to the 'Pages' sub-section, using the menu on the left of the page.
 3. Find the dropdown menu underneath the 'Source' subheading and choose the 'Main' branch. 
 4. Click 'Save' to deploy the website.  
 
 ## Fork Instructions:
 
-1. Navigate to the top-right menu of the project's [Repository](https://github.com/Ogilboot/pennfest) and click on 'Fork'.
+1. Navigate to the top-right menu of the project's [Repository](https://github.com/Ogilboot/gametown) and click on 'Fork'.
 2. This will create an exact copy of the current repository in your Github account.
 
 ## Clone Instructions: 
 
-1. Navigate to the top menu of the project's [Repository](https://github.com/Ogilboot/pennfest) and click on 'Code'.
+1. Navigate to the top menu of the project's [Repository](https://github.com/Ogilboot/gametown) and click on 'Code'.
 2. Copy the URL found in the 'HTTPS' section.
 3. Open Git Bash in your chosen development environment. 
 4. Edit the working directory to the location where you would like your newly cloned directory to be stored.
@@ -233,14 +236,14 @@ We used 'Github Pages' to host our site.
 # Credits
 ---
 
-- All images were downloaded from [Pixabay](https://pixabay.com/).
 - All Wireframes were created using [Balsamiq](https://balsamiq.com/).
-- The 'Lineup' graphic and 'Logo' were created using [Canva](https://www.canva.com/).
+- All custom artwork was created using [Canva](https://www.canva.com/).
 - [Bootstrap](https://getbootstrap.com/) Was used extensively throughout the site, both for basic site structure aswell as more involved elements such as our 'Tickets' page and 'Nav Bar'.
 - All fonts were found on [Google-Fonts](https://fonts.google.com/).
 - All Icons were found on [Font-Awesome](https://fontawesome.com/).
 - All text was written by myself.
 - [W3Schools](https://www.w3schools.com/) & the [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) were both used extensively as reference sources throughout the making of our site. 
+- [CodeAcademy](https://www.codecademy.com/) tutorials were used as reference for the building of both BlockBattle & SpaceSnake.
 
 ---
 # Acknowledgements
