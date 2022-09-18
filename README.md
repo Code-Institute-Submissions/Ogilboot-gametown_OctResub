@@ -26,39 +26,35 @@ Please feel free to view the deployed website [here](https://ogilboot.github.io/
 
 ## **Wireframes.**
 ---
-Our Wireframes were created using [Balsamiq](https://balsamiq.com/). We created representations of various screen sizes in order to map out our responsive design. The design of the final site however changed quite significantly throughout the design process. These changes I feel have elevated the final product above what was initially planned at the Wireframe stage.
+Our Wireframes were created using [Balsamiq](https://balsamiq.com/). We created representations of various screen sizes in order to map out our responsive design. The design of the final site however changed quite significantly throughout the design process. These changes I feel have elevated the final product above what was initially planned at the Wireframe stage. We did however end up removing the 'Contact Form' page altogether due to time contraints, and will be looking to reimplement this feature at a later date. 
 
 Desktop Wireframes:
 
-- [Home](/assets/images/homepage%20desktop.png)
-- [Info](/assets/images/info%20-%20desktop.png)
-- [Tickets](/assets/images/tickets-desktop.png)
-- [Schedule](/assets/images/schedule-desktop.png)
-- [Contact](/assets/images/contact-desktop.png)
+- [Home](/assets/images/full-home.png)
+- [GameScreens](/assets/images/full-game.png)
+- [Contact](/assets/images/full-contact.png)
 
 Mobile Wireframes:
 
-- [Home](/assets/images/home-mobile.png)
-- [Info](/assets/images/info-mobile.png)
-- [Tickets](/assets/images/tickets-mobile.png)
-- [Schedule](/assets/images/schedule-mobile.png)
-- [Contact](/assets/images/contact-mobile.png)
+- [Home](/assets/images/mobile-home.png)
+- [GameScreens](/assets/images/mobile-game.png)
+- [Contact](/assets/images/mobile-contact.png)
 
 ## **Site Structure.**
 ---
 Our site utilised a simple, easy to navigate site-structure, as is illustrated in the below diagram. We felt this best suited the needs of the site, which weren't overly-complicated or information heavy.
 
-![Site Structure Diagram](/assets/images/site-structure.png?raw=true "Site Structure Diagram")
+![Site Structure Diagram](/assets/images/site-structure-gamefest.png "Site Structure Diagram")
 
 ## **Design Choices.**
 ---
 ### Typography. 
-We used 'Roboto' and 'Exo' fonts across our website to achieve a modern, clean asthetic. We feel this suits the younger demographics attracted to festivals such as PennFest.
+We used 'Kavoon' and 'Sans Serif' fonts across our website to achieve a clean, retro asthetic. We feel this suits the overall design ethos of the site and fits in perfectly with the 'Retro' game theme.
 
 ### Colour Scheme.
-We chose an eclectic mixture of colours, which nontheless gave the site a vibrant, celebratory feel. While we wanted the overall experience to be clean and easily accesible, we felt it important to include ample amounts of colour across the different pages to bring the festival itself to life somewhat. We reused the same colours found within our main logo across much of the site, and would like to further expand this in later iterations if possible.
+We focused on using a vibrant colour palette which suited our ongoing 'Retro Gamer' theme. We wanted to put the user in mind of an old arcade machine experience and feel the combination of colours chosen achieves this quite well. We also designed the site's background to continuously fade-cycle through this colour pallette. 
 
-- [PennFest Pallette](/assets/images/pennfest-pallette.png)
+- [GameTown Pallette](/assets/images/gametown-colourpalette.png)
 
 ---
 # Features
@@ -67,7 +63,7 @@ We chose an eclectic mixture of colours, which nontheless gave the site a vibran
 ## **Existing Features.**
 
 ### Header:
-- **Logo**: Gives a visual representation of the festivals' brand, along with a link back to the Homepage.
+- **Logo**: Gives a visual representation of the websites brand, along with a link back to the Homepage.
 - **Navigation Bar**: Fully responsive nav bar (minimises to a 'Burger' style drop down menu) which allows easy navigation to all pages of the site.
 - *Remains consistent throughout the site.*
 
@@ -78,33 +74,28 @@ We chose an eclectic mixture of colours, which nontheless gave the site a vibran
 
 ### Home Page:
 
-- **Hero Image**: Large hero-image displaying an crowds-eye-view of the main-stage. Overlay contains a button with 'Get Your Tickets' call to action. Button leads to 'Tickets' page.
-- **Horitontal Gallery**: Three smaller image displayed horizontally below, each containing festival imagery and a button leading to the following pages respectively: 'Info', 'Lineup' and 'Contact'.
+- **Large Image Carousel**: Large image carousel cycling through three images - Each custom designed and linked to a specific game. The carousel is automatic by default however can be manually controlled using the two arrows to left and right of the image. At the bottom of each image sits a 'Play Now' button which links through to the respective gamepage. *This layout displays on screens sizes of md and above.*
+- **Individual Game Cards**: Three indiviual 'Cards', each containing the same image as shown in the large carousel (scaled to correct size) and each also containing a 'Play Now' button which links through to the respective game pages. *This layout displays for screen sizes of sm and below and is static in design.*
 
-### Info Page:
+### BlockBattle Page:
 
-- **Key Info List**: A list of key information needed for those attending the festival. Styled with vibrant colours to make it an eye-catching feature.
-- **Horitontal Gallery**: Three smaller image displayed horizontally below, each containing festival imagery and a button leading to the following pages respectively: 'Info', 'Lineup' and 'Contact'.
+- **Screen Size Selection**: Three images coupled with buttons, prompting the user to select their screen size. This selection panel has been designed to be minimal and easy for the user to quickly understand and use.
+- **Game Page**: Once the user has selected their screen size they will be sent to the correctly scaled version of our BlockBattle game. The game itself sits in the centre of the users screen, with a player bar sitting at the bottom of a rectangular 'Game Zone', a ball just above it, and finally a bank of destructable blocks at the top of the Game Zone. The user can start the game at anytime using the 'Start Game' button above the Game Zone, which sits in a row with an 'Instructions tab' (linked to a modal containing basic instructions) and a 'Score' section, linked to the destruction of the blocks below. The aim of the game is to move the paddle on a horizontal axis in order to reboud the ball as it moves, colliding with the blocks above and in turn destroying them, scoring a point in the process. The paddle can be move using either the 'Left' and 'Right' keys on a keyboard, or using the clearly labelled buttons sited directly below the Game Zone. The game has inbuilt sound linked to most player actions.
 
-### Tickets Page:
+### MemoryMadness Page:
 
-- **Ticket List Section**: A responsive grid split into various sub-categories, seperated by different price-points / different features included with that particular package. Each sub-section contains a list displaying what is included, along with a button currently displaying as 'Sold Out'.
-- **Horitontal Gallery**: Three smaller image displayed horizontally below, each containing festival imagery and a button leading to the following pages respectively: 'Info', 'Lineup' and 'Contact'.
+- **Game Page**: A fully responsive Quiz UI, with an 'Instructions' bar spanning the top, the multiple-choice questions dislayed below and finally a submit button at the very bottom of the quiz. Users are prompted to select the answer they believe to be correct before hitting 'Submit', cycling to the next question. At the end of the quiz the users score is provided and they are given the option to Reload the quiz. The Instructions bar is linked to a popup modal with full instructions listed within, and most user actions are linked to inbuilt sound effects.
 
-### Lineup Page:
+### SpaceSnake Page:
 
-- **Responsive Lineup Poster**: Displayed as a full-screen image, the lineup poster is fully responsive, switching to a more appropriate layout according to viewing screen size. The poster contains a full list of fictional bands due to play at the festival, along with a sub-list of other attractions available.
-- **Horitontal Gallery**: Three smaller image displayed horizontally below, each containing festival imagery and a button leading to the following pages respectively: 'Info', 'Lineup' and 'Contact'.
-
-### Contact Page: 
-
-- **Contact Form**: Lightly stylised contact form allows the user to directly contact the festival organisers, containing 'Name', 'Email' and 'Your Message' sections all required to be filled in. Below is a stylised 'Send' button. 
-- **Horitontal Gallery**: Three smaller image displayed horizontally below, each containing festival imagery and a button leading to the following pages respectively: 'Info', 'Lineup' and 'Contact'.
+- **Game Page**: At the top of the page sits the: 'Instructions', 'Start Game' and 'Score' sections, arranged horzizontally in toolbar fashion. The Instructions button is linked to a popup modal containing full instructions should the user need guidance. The 'Start Game' button prompts a popup box preparing the user for the beginning of the game, linked to a 3 second timer before the 'Snake' bursts into action. The 'Score' section is linked to each piece of 'Food' the user manages to eat, with each worth 10 points. Once the game has begun the user is required to navigate the snake within the Game Zone, eating the pieces of food as they spawn and accumulating points, while avoiding hitting either the walls or itself, at which point a popup 'Alert' box informs the user that the game is over. Once completed the game reloads to its original state and awaits further user input before begining another round. The 'Snake' itself can be controlled either by the arrow keys of a keyboard or using the clearly labelled buttons directly below the Game Zone. 
 
 ## **Future Features.**
 
-- **Gallery** - We plan to implement a 'Gallery' page, displaying a responsive gallery of images taken at the festival. 
-- **Sales Implementation** - We plan to allow for live purchases to take place on the site, using an integrated sales system. This would allow us to activate the currently 'Sold Out' buttons under each sub-section of the tickets page.
+- **Levels** - We plan to implement levels into our existing games. We would like to increase the difficulty with each level gained, hopefully offering a more in-depth, dynamic gameplay experience to our users. 
+- **High Scores** - We plan to implement a scoring system, along with a 'High Score' display board. We feel this added element of competition will enhance the gameplay experience on offer. 
+- **New Games** - We plan to expand our offering of retro styled games, offering more choice for our users.
+- **Contact** - We plan to implement a 'Contact' section with an inbuilt contact form, allowing users to get in touch with feedback if necessary. 
 
 ---
 # Technologies Used
@@ -136,6 +127,8 @@ We chose an eclectic mixture of colours, which nontheless gave the site a vibran
 - Our CSS page also returned no errors, when run through the [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/validator).A partial screenshot of the output is provided below. 
 
 - [CSS Pass](/assets/images/CSS-pass.png)
+
+
 
 ## Responsiveness:
 

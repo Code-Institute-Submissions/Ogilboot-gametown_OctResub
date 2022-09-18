@@ -1,26 +1,26 @@
 // code partially copied and customised from 'codeacademy' tutorial
 
-const grid = document.querySelector('.grid')
-const scoreDisplay = document.querySelector('#score')
-const blockWidth = 100
-const blockHeight = 20
-const ballDiameter = 20
-const boardWidth = 560
-const boardHeight = 300
-let timerId 
-let xDirection = 2
-let yDirection = 2
-let score = 0
+const grid = document.querySelector(".grid");
+const scoreDisplay = document.querySelector("#score");
+const blockWidth = 100;
+const blockHeight = 20;
+const ballDiameter = 20;
+const boardWidth = 560;
+const boardHeight = 300;
+let timerId;
+let xDirection = 2;
+let yDirection = 2;
+let score = 0;
 
-let mySound = new Audio('assets/music/score-sound2.wav')
-let mySound2 = new Audio('assets/music/game-winner.wav')
-let mySound3 = new Audio('assets/music/game-loser.wav')
+let mySound = new Audio("assets/music/score-sound2.wav");
+let mySound2 = new Audio("assets/music/game-winner.wav");
+let mySound3 = new Audio("assets/music/game-loser.wav");
 
-const playerStart = [230, 10]
-let currentPosition = playerStart
+const playerStart = [230, 10];
+let currentPosition = playerStart;
 
-const ballStart = [270, 40]
-let ballCurrentPosition = ballStart
+const ballStart = [270, 40];
+let ballCurrentPosition = ballStart;
 
 //creates block individual
 class Block {
