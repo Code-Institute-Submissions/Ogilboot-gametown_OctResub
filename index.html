@@ -18,29 +18,29 @@
       
         <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 
-            <!-------------------------- Nav Bar Bootstrap Hamburger Icon Collapse Function / partially copied and customised from bootstrap docs --------------------------->
+            <!-- Nav Bar Bootstrap Hamburger Icon Collapse Function / partially copied and customised from bootstrap docs -->
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse_target">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <a href="index.html" class="navbar-brand"><img src="assets/images/gametown.png" alt="Gametown Logo"></a>
 
-            <!-------------------------------------------------------------Nav Bar Collapse Function-------------------------------------------------->
+            <!--Nav Bar Collapse Function-->
             <div class="collapse navbar-collapse" id="collapse_target">
 
-            <!--------------------------------------------------------------Nav Bar Bootstrap Items---------------------------------------------------->
+            <!--Nav Bar Bootstrap Items-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <button class="btn-md btn-info active" type="button"><a class="nav-link" href="index.html" aria-label="home">Home</a></button>
+                  <a class="nav-link1" href="index.html" aria-label="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn-md btn-danger" type="button"><a class="nav-link" href="blockbattle.html" aria-label="blockbattle">BlockBattle</a></button>
+                  <a class="nav-link2" href="blockbattle.html" aria-label="blockbattle">BlockBattle</a>
                 </li>
                 <li class="nav-item">
-                  <button class="btn-md btn-success" type="button"><a class="nav-link" href="memory-madness.html" aria-label="memory-madness">MemoryMadness</a></button>
+                  <a class="nav-link3" href="memory-madness.html" aria-label="memory-madness">MemoryMadness</a>
                 </li>
                 <li class="nav-item">
-                  <button class="btn-md btn-warning" type="button"><a class="nav-link" href="spacesnake.html" aria-label="spacesnake">SpaceSnake</a></button>
+                  <a class="nav-link4" href="spacesnake.html" aria-label="spacesnake">SpaceSnake</a>
                 </li>
             </ul>
             </div>
@@ -48,8 +48,8 @@
 
     </header>
 
-      <!------------------------------------------------------- carousel to be shown medium and above ----------------------------------------------------------------->
-    <section class="hero d-none d-md-block">
+      <!-- carousel to be shown medium and above -->
+    <div class="hero d-none d-md-block">
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -65,19 +65,19 @@
               <div class="carousel-item active">
                   <img class="d-block w-100" src="assets/images/blockbattle.png" alt="First slide">
                   <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn-lg btn-danger"><a href="blockbattle.html">PLAY NOW</a></button>
+                    <a href="blockbattle.html" class="nav-link3">PLAY NOW</a>
                   </div>
               </div>
               <div class="carousel-item">
                   <img class="d-block w-100" src="assets/images/memory-madness.png" alt="Second slide">
                   <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn-lg btn-danger"><a href="memory-madness.html">PLAY NOW</a></button>
+                    <a href="memory-madness.html" class="nav-link3">PLAY NOW</a>
                 </div>
               </div>
               <div class="carousel-item">
                   <img class="d-block w-100" src="assets/images/space-snake.png" alt="Third slide">
                   <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn-lg btn-danger"><a href="spacesnake.html">PLAY NOW</a></button>
+                    <a href="spacesnake.html" class="nav-link3">PLAY NOW</a>
                 </div>
               </div>
           </div>
@@ -91,16 +91,16 @@
           </a>
       </div>
 
-    </section>
+    </div>
 
-    <!--------------------------------------------------------- cards to be shown on sm and below ----------------------------------------------------------------->
+    <!-- cards to be shown on sm and below -->
 
     <section class="hero d-md-none">
       <div class="card-deck">
           <div class="card bg-danger">
             <img class="card-img-top" src="assets/images/blockbattle.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><button type="button" class="btn btn-dark btn-lg"><a href="blockbattle.html">PLAY</a></button></h5>
+              <h5 class="card-title"><a href="blockbattle.html" class="nav-link1">PLAY</a></h5>
               <p class="card-text"></p>
             </div>
             <div class="card-footer">
@@ -110,7 +110,7 @@
           <div class="card bg-success">
             <img class="card-img-top" src="assets/images/memory-madness.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><button type="button" class="btn btn-dark btn-lg"><a href="memory-madness.html">PLAY</a></button></h5>
+              <h5 class="card-title"><a href="memory-madness.html" class="nav-link1">PLAY</a></h5>
               <p class="card-text"></p>
             </div>
             <div class="card-footer">
@@ -120,7 +120,7 @@
           <div class="card bg-warning">
             <img class="card-img-top" src="assets/images/space-snake.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><button type="button" class="btn btn-dark btn-lg"><a href="spacesnake.html">PLAY</a></button></h5>
+              <h5 class="card-title"><a href="spacesnake.html" class="nav-link1">PLAY</a></h5>
               <p class="card-text"></p>
             </div>
             <div class="card-footer">

@@ -21,6 +21,52 @@
     color: white;
   }
 
+/* navbar styling */
+
+.nav-link1 {
+  background-color: #36454F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.nav-link2 {
+  background-color: #117A8B;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.nav-link3 {
+  background-color: #DC3545;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.nav-link4 {
+  background-color: #28A745;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 /* homepage styling */
 
 a {
@@ -117,12 +163,12 @@ a:hover {
   margin-left: 300px;
 }
 
-.block-score-container {
+/*.block-score-container {
   height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .control-container {
   height: 200px;
@@ -269,7 +315,7 @@ button:focus{
   text-align: left;
 }
 
-/* contact form styling */
+/* contact form styling - to be reintroduced
 
 .contact-heading {
   color: #fafafa;
@@ -299,7 +345,9 @@ button:focus{
 
 #contact-button {
   margin-top: 25px;
-}
+} 
+
+*/
 
 /* ---------------------------------------------------------- footer */
 

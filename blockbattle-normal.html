@@ -17,29 +17,29 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
 
-            <!---------------------- Nav Bar Bootstrap Hamburger Icon Collapse Function / partially copied and customised from bootstrap docs --------------------------->
+            <!-- Nav Bar Bootstrap Hamburger Icon Collapse Function / partially copied and customised from bootstrap docs -->
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse_target">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <a href="index.html" class="navbar-brand"><img src="assets/images/gametown.png" alt="PennFest Logo"></a>
 
-            <!------------------------------------------------------ Nav Bar Collapse Function --------------------------------------------------------------->
+            <!-- Nav Bar Collapse Function -->
             <div class="collapse navbar-collapse" id="collapse_target">
-            <!------------------------------------------------------- Nav Bar Bootstrap Items -------------------------------------------------------------->
+            <!-- Nav Bar Bootstrap Items -->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <button class="btn-md btn-info" type="button"><a class="nav-link" href="index.html" aria-label="home">Home</a></button>
-                </li>
-                <li class="nav-item">
-                    <button class="btn-md btn-danger active" type="button"><a class="nav-link" href="blockbattle.html" aria-label="blockbattle">BlockBattle</a></button>
-                </li>
-                <li class="nav-item">
-                  <button class="btn-md btn-success" type="button"><a class="nav-link" href="memory-madness.html" aria-label="memory-madness">MemoryMadness</a></button>
-                </li>
-                <li class="nav-item">
-                  <button class="btn-md btn-warning" type="button"><a class="nav-link" href="spacesnake.html" aria-label="spacesnake">SpaceSnake</a></button>
-                </li>
+              <li class="nav-item active">
+                <a class="nav-link1" href="index.html" aria-label="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link2" href="blockbattle.html" aria-label="blockbattle">BlockBattle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link3" href="memory-madness.html" aria-label="memory-madness">MemoryMadness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link4" href="spacesnake.html" aria-label="spacesnake">SpaceSnake</a>
+              </li>
             </ul>
             </div>
         </nav>
@@ -52,18 +52,16 @@
       Instructions
     </button>
 
-          <!-- play button-->
-          <button type="button" class="btn btn-success" id="block-start">
-            Start Game
-          </button>
+    <!-- play button-->
+    <button type="button" class="btn btn-success" id="block-start">
+      Start Game
+    </button>
 
-          <!--score section-->
-          <button type="button" class="btn btn-danger">
-            <div id="score" class="block-score-container">0</div>
-          </button>
+    <!--score section -->
+    <button type="button" class="btn btn-danger block-score-container" id="score"></button>
     
     <!-- Modal / partially copied and customised from bootstrap docs -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -74,10 +72,10 @@
           <div class="modal-body">
             <h5 class="card-header bg-danger">Instructions:</h5>
             <ul class="list-group">
-              <li class="list-group-item"><b>1:</b> Use the Left & Right arrow keys to move the paddle and intercept the bouncing ball into the blocks.</li>
+              <li class="list-group-item"><b>1:</b> Use either the Left & Right arrow keys OR buttons to move the paddle horizontally and intercept the bouncing ball into the blocks.</li>
               <li class="list-group-item"><b>2:</b> Don't let the ball hit the bottom line or you will lose.</li>
               <li class="list-group-item"><b>3:</b> You will score 1 for each block destroyed.</li>
-              <li class="list-group-item"><b>4:</b> Use the <button type="button" class="btn btn-success" id="block-start">Start Game</button> button to reload.</li>
+              <li class="list-group-item"><b>4:</b> Use the <button type="button" class="btn btn-success">Start Game</button> button to reload.</li>
             </ul>
           </div>
           <div class="modal-footer">
@@ -89,7 +87,7 @@
   </section> 
 
     <!-- main game section -->
-    <section class="hero d-none d-md-block">
+    <div class="hero d-none d-md-block">
       <div class="container">
         <div class="grid main item"></div>
       </div>
@@ -97,7 +95,7 @@
         <button type="button" class="btn btn-lg btn-danger" id="left-button">Left</button>
         <button type="button" class="btn btn-lg  btn-dark" id="right-button">Right</button>
       </div>
-    </section>
+    </div>
 
           <!--Footer -->
 

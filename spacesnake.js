@@ -1,13 +1,12 @@
     // code partially copied and customised from 'codeacademy' tutorial
-    
-    const board_border = 'black';
+    const board_border = "black";
     const board_background = "white";
-    const snake_col = '#BC3823';
-    const snake_border = 'black';
+    const snake_col = "#BC3823";
+    const snake_border = "black";
 
-    let mySound = new Audio('assets/music/score-sound2.wav')
-    let mySound2 = new Audio('assets/music/snake-music.wav')
-    let mySound3 = new Audio('assets/music/snake-loser.wav')
+    let mySound = new Audio("assets/music/score-sound2.wav");
+    let mySound2 = new Audio("assets/music/snake-music.wav");
+    let mySound3 = new Audio("assets/music/snake-loser.wav");
 
     let snake = [
       {x: 200, y: 200},
@@ -15,7 +14,7 @@
       {x: 180, y: 200},
       {x: 170, y: 200},
       {x: 160, y: 200}
-    ]
+    ];
 
     let score = 0;
     // True if changing direction
@@ -26,15 +25,12 @@
     let dx = 10;
     // Vertical velocity
     let dy = 0;
-    
-    
     // Get the canvas element
     const snakeboard = document.getElementById("snakeboard");
     // Return a two dimensional drawing context
     const snakeboard_ctx = snakeboard.getContext("2d");
 
     clear_board();
-    
     // start game button with 3 second timer for recurring functions
     document.getElementById("snake-startgame").addEventListener("click", function() {
       alert("Get Ready! The game will begin 3 seconds after you click 'OK', and the snake is quick!");
@@ -44,18 +40,17 @@
       //gen_food();
       document.addEventListener("keydown", change_direction);
     });
-    
     // main function called repeatedly to keep the game running
     function main() {
 
         if (has_game_ended()) {
           setInterval(reloadGame, 2000);
-          mySound3.play()
+          mySound3.play();
           alert("Bad Luck! You Lose.");
           return;
         }
 
-        mySound2.play()
+        mySound2.play();
 
         changing_direction = false;
         setTimeout(function onTick() {
@@ -65,9 +60,8 @@
         drawSnake();
         // Repeat
         main();
-      }, 100)
+      }, 100);
     }
-    
     // draw a border around the canvas
     function clear_board() {
       //  Select the colour to fill the drawing
@@ -79,20 +73,18 @@
       // Draw a "border" around the entire canvas
       snakeboard_ctx.strokeRect(0, 0, snakeboard.width, snakeboard.height);
     }
-    
     // Draw the snake on the canvas
     function drawSnake() {
       // Draw each part
-      snake.forEach(drawSnakePart)
+      snake.forEach(drawSnakePart);
     }
 
     function drawFood() {
-      snakeboard_ctx.fillStyle = '#008080';
-      snakeboard_ctx.strokestyle = 'black';
+      snakeboard_ctx.fillStyle = "#008080";
+      snakeboard_ctx.strokestyle = "black";
       snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
       snakeboard_ctx.strokeRect(food_x, food_y, 10, 10);
     }
-    
     // Draw one snake part
     function drawSnakePart(snakePart) {
 
@@ -100,7 +92,7 @@
       snakeboard_ctx.fillStyle = snake_col;
       // Set the border colour of the snake part
       snakeboard_ctx.strokestyle = snake_border;
-      // Draw a "filled" rectangle to represent the snake part at the coordinates
+      // Draw a "filled" rectangle to represent the snake
       // the part is located
       snakeboard_ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
       // Draw a border around the snake part
@@ -141,9 +133,7 @@
       const UP_KEY = 38;
       const DOWN_KEY = 40;
 
-    
     // Prevent the snake from reversing
-    
       if (changing_direction) return;
       changing_direction = true;
       const keyPressed = event.keyCode;
@@ -181,7 +171,7 @@
         score += 10;
         mySound.play()
         // Display score on screen
-        document.getElementById('score').innerHTML = score;
+        document.getElementById("score").innerHTML = score;
         // Generate new food location
         gen_food();
       } else {
@@ -193,27 +183,23 @@
 document.addEventListener("DOMContentLoaded", function () {
     pTag = document.querySelector("div");
     newVal = document.createElement("p");
-    newVal.innerHTML = '';
+    newVal.innerHTML = "";
     pTag.appendChild(newVal);
   });
 
-  // mobile  controls 
-
+  // mobile  controls
   document.getElementById("left-snake-button").addEventListener("click", function() {
     dx = -10;
     dy = 0;
     })
-
   document.getElementById("right-snake-button").addEventListener("click", function() {
     dx = 10;
     dy = 0;
       })
-  
   document.getElementById("up-snake-button").addEventListener("click", function() {
     dx = 0;
     dy = -10;
         })
-
   document.getElementById("down-snake-button").addEventListener("click", function() {
     dx = 0;
     dy = 10;
