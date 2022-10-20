@@ -201,7 +201,6 @@ function changeDirection() {
 }
 
  // all below ORIGINAL
-
  // starts game on button click
  document.getElementById("block-start").addEventListener("click", function() {
     timerId = setInterval(moveBall, 20);
