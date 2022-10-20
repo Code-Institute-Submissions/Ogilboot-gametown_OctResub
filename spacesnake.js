@@ -1,9 +1,13 @@
-    // code partially copied and customised from 'codeacademy' tutorial
+    // code partially copied and customised from online tutorial
+    // i'm sorry but i am unable to find the original tutorial source
+    // please assume all blocks of code not marked as 'ORIGINAL' are copied and customised, there are many small tweaks throughout as with the other games.
+
     const board_border = "black";
     const board_background = "white";
     const snake_col = "#BC3823";
     const snake_border = "black";
 
+    // ORIGINAL
     let mySound = new Audio("assets/music/score-sound2.wav");
     let mySound2 = new Audio("assets/music/snake-music.wav");
     let mySound3 = new Audio("assets/music/snake-loser.wav");
@@ -16,7 +20,7 @@
       {x: 160, y: 200}
     ];
 
-    let score = 0;
+    let score = 0; 
     // True if changing direction
     let changing_direction = false;
     // Horizontal velocity
@@ -43,6 +47,7 @@
     // main function called repeatedly to keep the game running
     function main() {
 
+      // ORIGINAL
         if (has_game_ended()) {
           setInterval(reloadGame, 2000);
           mySound3.play();
@@ -50,6 +55,7 @@
           return;
         }
 
+        // ORIGINAL
         mySound2.play();
 
         changing_direction = false;
@@ -187,6 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pTag.appendChild(newVal);
   });
 
+  // ORIGINAL
   // mobile  controls
   document.getElementById("left-snake-button").addEventListener("click", function() {
     dx = -10;
@@ -205,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dy = 10;
           })
 
+  // ORIGINAL
   // stops page from scrolling when playing
   window.addEventListener("keydown", function(e) {
     if(["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
@@ -212,6 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }, false);
 
+// ORIGINAL
 // reloadGame function
 function reloadGame() {
   document.location.reload();

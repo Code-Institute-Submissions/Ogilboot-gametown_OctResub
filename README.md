@@ -243,7 +243,9 @@ We used 'Github Pages' to host our site.
 - All Icons were found on [Font-Awesome](https://fontawesome.com/).
 - All text was written by myself.
 - [W3Schools](https://www.w3schools.com/) & the [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/) were both used extensively as reference sources throughout the making of our site. 
-- [CodeAcademy](https://www.codecademy.com/) tutorials were used as reference for the building of both BlockBattle & SpaceSnake.
+- [CodeAcademy](https://www.youtube.com/watch?v=ec8vSKJuZTk) tutorials were used as reference for the building of BlockBattle.
+- A [CodingWithNick](https://www.youtube.com/watch?v=CqddbIrEM5I&t=3s) tutorial was used to help create our 'MemoryMadness' game. 
+- Unfortuanetly I have been unable to trace the specific tutorial used to create 'Spacesnake'. This was a mistake on my part. 
 
 ---
 # Acknowledgements

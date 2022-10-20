@@ -1,5 +1,9 @@
 // code partially copied and customised from 'codeWithNick' tutorial
+// full detail of customisation carried out is difficult to do as there are so many small tweaks throughout the project and it has been a few weeks now.
+// i will highlight the purely custom sections and leave the rest as 'copied and customised' 
+// link to tutorial https://www.youtube.com/watch?v=CqddbIrEM5I
 
+// all questions are ORIGINAL
 const quizData = [
   {
       question: "What is the average age of gamers in the USA?",
@@ -84,8 +88,8 @@ let currentQuiz = 0;
 let score = 0;
 
 // SFX
-let mySound = new Audio("assets/music/quiz-answer.wav");
-let mySound2 = new Audio("assets/music/quiz-finished.wav");
+let mySound = new Audio("assets/music/quiz-answer.wav"); // ORIGINAL
+let mySound2 = new Audio("assets/music/quiz-finished.wav"); // ORIGINAL
 
 loadQuiz();
 
@@ -116,7 +120,7 @@ function getSelected() {
   return answer
 }
 
-
+// ORIGINAL
 submitBtn.addEventListener("click", () => {
   mySound.play()
   const answer = getSelected()
@@ -125,6 +129,7 @@ submitBtn.addEventListener("click", () => {
          score++
      }
 
+     // ORIGINAL
      currentQuiz++
 
      if(currentQuiz < quizData.length) {

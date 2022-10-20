@@ -1,4 +1,7 @@
-// code partially copied and customised from 'codeacademy' tutorial
+// code copied and customised from 'codeacademy' tutorial other than where explicitly stated
+// full detail of customisation carried out is difficult to do as there are so many small tweaks throughout the project and it has been a few weeks now.
+// i will highlight the purely ORIGINAL sections with capitalised comments and leave the rest as 'copied and customised' 
+// tutorial link - https://www.youtube.com/watch?v=ec8vSKJuZTk
 
 const grid2 = document.querySelector(".grid2");
 const scoreDisplay = document.querySelector("#score");
@@ -12,6 +15,7 @@ let xDirection = 2;
 let yDirection = 2;
 let score = 0;
 
+// ORIGINAL
 let mySound = new Audio("assets/music/score-sound2.wav");
 let mySound2 = new Audio("assets/music/game-winner.wav");
 let mySound3 = new Audio("assets/music/game-loser.wav");
@@ -98,6 +102,7 @@ function movePlayer(e) {
     }
 }
 
+// ORIGINAL
 document.addEventListener("keydown", movePlayer)
 
 // add ball
@@ -123,11 +128,11 @@ function checkForCollisions() {
             ((ballCurrentPosition[1] + ballDiameter ) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1])
         ) {
             const allBlocks = Array.from(document.querySelectorAll(".block2"))
-            mySound.play()
+            mySound.play() // ORIGINAL
             allBlocks[i].classList.remove("block2")
             blocks.splice(i, 1)
             changeDirection()
-            score++
+            score++ 
             scoreDisplay.innerHTML = score
 
             //check for win
@@ -135,8 +140,8 @@ function checkForCollisions() {
                 scoreDisplay.innerHTML = "Winner!"
                 mySound2.play()
                 clearInterval(timerId)
-                document.removeEventListener("keydown", movePlayer)
-                setTimeout(reloadGame, 3000)
+                document.removeEventListener("keydown", movePlayer) // ORIGINAL
+                setTimeout(reloadGame, 3000) // ORIGINAL
             }
 
         }
@@ -165,9 +170,9 @@ function checkForCollisions() {
     if (ballCurrentPosition[1] <= 0) {
         clearInterval(timerId)
         scoreDisplay.innerHTML = "Loser!"
-        mySound3.play()
-        document.removeEventListener("keydown", movePlayer)
-        setTimeout(reloadGame, 2000)
+        mySound3.play() // ORIGINAL
+        document.removeEventListener("keydown", movePlayer) // ORIGINAL
+        setTimeout(reloadGame, 2000) // ORIGINAL
     }
 
 }
@@ -191,6 +196,8 @@ function changeDirection() {
         return
     }
 }
+
+ // all below ORIGINAL
 
  // starts game on button click
  document.getElementById("block-start").addEventListener("click", function() {
